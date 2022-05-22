@@ -22,6 +22,17 @@ public:
 
 void gui::build_UI()
 {
+	// coloram background-ul
+	QPalette pal = QPalette();
+	QFont font("Times", 12, QFont::Bold);
+	pal.setColor(QPalette::Window, "#008080");
+	pal.setColor(QPalette::WindowText, "#000080");
+	this->setAutoFillBackground(true);
+	this->setPalette(pal);
+	this->setFont(font);
+
+
+
 	QVBoxLayout* mainly = new QVBoxLayout;
 
 	QHBoxLayout* hly = new QHBoxLayout;
